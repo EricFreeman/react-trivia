@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './index.css';
 
 export default () => (
-  <div>
-    <h1>About</h1>
+  <div className='about'>
     <p>
-      Simple quiz made with React and Redux.  Uses Open Trivia Database for questions.  All source available on my GitHub.
+      Trivia game created by Eric Freeman.  Made with React and Redux.  Uses Open Trivia Database for questions.  All source available on my GitHub.
     </p>
   </div>
 )

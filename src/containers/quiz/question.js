@@ -40,7 +40,7 @@ export default class Question extends React.Component {
         const { question } = this.props.question;
 
         return (
-            <div>
+            <div className='question'>
                 <h3 dangerouslySetInnerHTML={{__html: question}} />
                 <ul>
                     {this.state.answerList.map(this.renderAnswer)}
@@ -53,7 +53,7 @@ export default class Question extends React.Component {
         const { hasAnswered, isCorrect, answerSelected } = this.state;
 
         if (!hasAnswered) {
-            return <li key={answer}><a onClick={() => this.selectAnswer(answer)} dangerouslySetInnerHTML={{__html: answer}} /></li>
+            return <li key={answer} onClick={() => this.selectAnswer(answer)} dangerouslySetInnerHTML={{__html: answer}} />
         }
 
         let className = 'no-class';

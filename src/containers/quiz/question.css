@@ -1,7 +1,45 @@
-.correct {
-    color: green;
+.question {
+    margin: 8px 0;
+    background-color: #FFF7C0;
+    border-radius: 32px;
+    padding: 32px;
 }
 
-.incorrect {
+.question h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.question ul {
+    margin-top: 16px;
+}
+
+.question li {
+    background-color: rgba(0, 0, 0, .05);
+    padding: 16px 8px;
+    border-radius: 8px;
+    margin: 16px 0 0 0;
+    user-select: none;
+}
+
+.question li:hover {
+    background-color: rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.question li.correct {
+    background-color: rgba(0, 255, 0, .1);
+    color: green;
+    cursor: default;
+}
+
+.question li.incorrect {
+    background-color: rgba(255, 0, 0, .1);
     color: red;
+    cursor: default;
+}
+
+.question li.no-class {
+    background-color: rgba(0, 0, 0, .05);
+    cursor: default;
 }

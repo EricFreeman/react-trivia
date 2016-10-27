@@ -1,0 +1,29 @@
+.next-button {
+    background-color: #FA7C92;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 2px;
+    float: right;
+    cursor: pointer;
+}
+
+.next-button:hover {
+    background-color: #FF96AC;
+}
+
+.quiz-header {
+    font-size: 18px;
+    color: #FA7C92;
+    font-weight: bold;
+}
+
+p {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.right {
+    float: right;
+}
